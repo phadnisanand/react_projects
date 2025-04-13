@@ -18,6 +18,7 @@ import { ContextDemo } from './components/ContextDemo'
 import { createContext } from 'react';
 import { Child1Context } from './components/context/Child1Context'
 import { DemoComponent } from './components/DemoComponent';
+import { Lazyparent } from './lazyparent';
 
 export const ThemeContext = createContext(null);
 
@@ -41,7 +42,9 @@ function App() {
      {/* <ThemeContext.Provider value={{name:'Anand', age: '35'}}>
          <Child1Context />
     </ThemeContext.Provider> */}
-    <DemoComponent name="anand"></DemoComponent>
+    {/* <DemoComponent name="anand"></DemoComponent> */}
+    {/* <LazyloadComponent></LazyloadComponent> */}
+    <Lazyparent></Lazyparent>
     </>
   )
 }
