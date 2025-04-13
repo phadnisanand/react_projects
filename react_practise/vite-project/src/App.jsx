@@ -19,6 +19,7 @@ import { createContext } from 'react';
 import { Child1Context } from './components/context/Child1Context'
 import { DemoComponent } from './components/DemoComponent';
 import { Lazyparent } from './lazyparent';
+import { Tutorial } from './components/tutorial';
 
 export const ThemeContext = createContext(null);
 
@@ -44,7 +45,8 @@ function App() {
     </ThemeContext.Provider> */}
     {/* <DemoComponent name="anand"></DemoComponent> */}
     {/* <LazyloadComponent></LazyloadComponent> */}
-    <Lazyparent></Lazyparent>
+    {/* <Lazyparent></Lazyparent> */}
+    <Tutorial></Tutorial>
     </>
   )
 }
